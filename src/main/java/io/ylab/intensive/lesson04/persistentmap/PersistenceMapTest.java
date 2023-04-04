@@ -9,7 +9,6 @@ public class PersistenceMapTest {
   public static void main(String[] args) throws SQLException {
     DataSource dataSource = initDb();
     PersistentMap persistentMap = new PersistentMapImpl(dataSource);
-    // Написать код демонстрации работы
     persistentMap.init("game");
     System.out.println(persistentMap.getKeys());
     persistentMap.put("FIFA", "sport");
